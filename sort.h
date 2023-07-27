@@ -23,6 +23,6 @@ void print_list(const listint_t *list);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
-void lomuto_sort(int *array, int lo, int hi, size_t size);
+void quicksort_a(int *array, size_t low, size_t high);
 
 #endif
