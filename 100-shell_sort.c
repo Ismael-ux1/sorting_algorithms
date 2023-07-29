@@ -1,11 +1,27 @@
 #include "sort.h"
 
 /**
+ * swap - swaps 2 values
+ * @a: the first int
+ * @b: the seconde int
+ * Reuturn: void
+*/
+void swap(int *a, int *b)
+{
+int temp;
+
+temp = *a;
+*a = *b;
+*b = temp;
+}
+
+/**
  * shell_sort - Sorts an array of integers in ascending order
  *              using the Shell sort algorithm with the Knuth sequence.
  * @array: Array to be sorted.
  * @size: Size of the array.
  */
+
 void shell_sort(int *array, size_t size)
 {
 size_t interval = 1;
