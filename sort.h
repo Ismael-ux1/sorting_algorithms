@@ -23,6 +23,8 @@ void print_list(const listint_t *list);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
-void quicksort_a(int *array, size_t low, size_t high);
+void quick_sort_helper(int *array, int low, int high, size_t size);
+int partition(int *array, int low, int high, size_t size);
+void change_position(int *array, int *a, int *b, size_t size);
 
 #endif
